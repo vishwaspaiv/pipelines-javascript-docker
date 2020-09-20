@@ -9,6 +9,9 @@ spec:
       labels:
         app: vishwaspaivpipelinesjavascriptdocker 
     spec:
+      selector:
+       matchLabels:
+        app: vishwaspaivpipelinesjavascriptdocker
       containers:
         - name: vishwaspaivpipelinesjavascriptdocker 
           image: mycontainerregistryvp.azurecr.io/vishwaspaivpipelinesjavascriptdocker
