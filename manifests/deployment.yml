@@ -4,14 +4,14 @@ metadata:
   name: vishwaspaivpipelinesjavascriptdocker 
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: vishwaspaivpipelinesjavascriptdocker
   template:
     metadata:
       labels:
         app: vishwaspaivpipelinesjavascriptdocker 
-    spec:
-      selector:
-       matchLabels:
-        app: vishwaspaivpipelinesjavascriptdocker
+    spec:      
       containers:
         - name: vishwaspaivpipelinesjavascriptdocker 
           image: mycontainerregistryvp.azurecr.io/vishwaspaivpipelinesjavascriptdocker
